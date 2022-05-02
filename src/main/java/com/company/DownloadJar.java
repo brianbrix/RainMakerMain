@@ -12,8 +12,8 @@ import java.io.InputStream;
 public class DownloadJar {
     public static void download()
     {
-        String token = "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";
-        String url = "maven.pkg.github.com/brianbrix/RainMakerMain/mysec/rainmakerr/1.0.0/rainmakerr-1.0.0.exe";
+        String token = "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";
+        String url = "maven.pkg.github.com/brianbrix/RainMakerMain/mysec/rainmakerr/1.1.0/rainmakerr-1.1.0.exe";
         getGithubContentUsingHttpClient(token,url);
     }
     @SuppressWarnings("resource")
