@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>mysec</groupId>
+    <artifactId>rainmakerr</artifactId>
+    <version>1.0.0</version>
+
+    <properties>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+    </properties>
+    <dependencies>
+        <!-- https://mvnrepository.com/artifact/org.apache.httpcomponents/httpclient -->
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpclient</artifactId>
+            <version>4.5.13</version>
+        </dependency>
+
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+            <plugin>
+                <!-- Build an executable JAR -->
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>3.1.0</version>
+                <configuration>
+                    
+                    <archive>
+                        <manifest>
+                            <addClasspath>true</addClasspath>
+                            <classpathPrefix>lib/</classpathPrefix>
+                            <mainClass>com.company.Main</mainClass>
+                        </manifest>
+                    </archive>
+
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-resources-plugin</artifactId>
+                <version>3.2.0</version>
+            </plugin>
+
+            <plugin>
+                <groupId>com.akathist.maven.plugins.launch4j</groupId>
+                <artifactId>launch4j-maven-plugin</artifactId>
+                <version>2.1.2</version>
+                <executions>
+                    <execution>
+                        <id>jar-to-exe</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>launch4j</goal>
+                        </goals>
+                        <configuration>
+                            <headerType>gui</headerType>
+                            <stayAlive>true</stayAlive>
+                            <jar>${project.build.directory}/${project.build.finalName}.jar</jar>
+                            <outfile>${project.build.directory}/${project.build.finalName}.exe</outfile>
+<!--                            <manifest>${project.basedir}/src/main/resources/${project.artifactId}.manifest</manifest>-->
+
+                            <classPath>
+                                <!-- The main class to invoke on executing the .exe -->
+                                <mainClass>com.company.Main</mainClass>
+
+                            </classPath>
+                            <jre>
+                                <minVersion>1.8.0</minVersion>
+                                <jdkPreference>preferJre</jdkPreference>
+
+                                <!-- Relative path to the JRE in the final zip bundle, to launch the exe/jar-->
+                                <path>./lib/jre</path>
+
+                                <!-- Runtime arguments -->
+                                <opts>
+                                    <!-- Run time arguments can be passed using <opt> as below -->
+                                    <!--<opt>-Dparam=value</opt>-->
+                                </opts>
+
+                            </jre>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+
+    </build>
+    <distributionManagement>
+        <repository>
+            <id>github</id>
+            <name>GitHub Packages</name>
+            <url>https://maven.pkg.github.com/brianbrix/RainMaker</url>
+        </repository>
+    </distributionManagement>
+</project>
