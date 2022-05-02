@@ -9,8 +9,8 @@
     <version>1.0.1-SNAPSHOT</version>
 
     <properties>
-        <maven.compiler.source>11</maven.compiler.source>
-        <maven.compiler.target>11</maven.compiler.target>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
     </properties>
     <dependencies>
         <!-- https://mvnrepository.com/artifact/org.apache.httpcomponents/httpclient -->
@@ -34,8 +34,8 @@
             <plugin>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <configuration>
-                    <source>11</source>
-                    <target>11</target>
+                    <source>1.8</source>
+                    <target>1.8</target>
                 </configuration>
                 <version>3.10.1</version>
 
@@ -87,7 +87,7 @@
 
                             </classPath>
                             <jre>
-                                <minVersion>11.0</minVersion>
+                                <minVersion>1.8.0</minVersion>
                                 <jdkPreference>preferJre</jdkPreference>
 
                                 <!-- Relative path to the JRE in the final zip bundle, to launch the exe/jar-->
