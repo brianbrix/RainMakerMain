@@ -102,7 +102,7 @@
         <repository>
             <id>github</id>
             <name>GitHub Packages</name>
-            <url>https://maven.pkg.github.com/brianbrix/RainMaker</url>
+            <url>https://maven.pkg.github.com/brianbrix/RainMakerMain</url>
         </repository>
     </distributionManagement>
 </project>
