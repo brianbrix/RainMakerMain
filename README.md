@@ -1,7 +1,7 @@
 # RAINMAKER APP
 RainMaker is a Java Based application that simply bars a user from copying the wrong crypto address.
 ## Features
-The following are some of the features of the RainMaker App.
+The following are some of the features of the RainMaker App:
 
 - Allows admin to add three addresses to be used by a particular PC. This addresses must be entered in the order: BitcoinAdrress, ERC20Address, TRC20Address.
 - Allows the admin to compile a child application with these new addresses into .jar and .exe file.
