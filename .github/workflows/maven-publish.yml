@@ -23,9 +23,16 @@ jobs:
       uses: actions/setup-java@v3
       with:
         java-version: '8'
-        distribution: 'temurin'
-        server-id: github # Value of the distributionManagement/repository/id field of the pom.xml
-        settings-path: ${{ github.workspace }} # location for the settings.xml file
+#         distribution: 'temurin'
+#         server-id: github # Value of the distributionManagement/repository/id field of the pom.xml
+#         settings-path: ${{ github.workspace }} # location for the settings.xml file
+        
+    - name: Cache the Maven packages to speed up build
+      uses: actions/cache@v1
+      with:
+        path: ~/.m2
+        key: ${{ runner.os }}-m2-${{ hashFiles('**/pom.xml') }}
+        restore-keys: ${{ runner.os }}-m2      
 
     - name: Build with Maven
       run: mvn -X -B package --file pom.xml
