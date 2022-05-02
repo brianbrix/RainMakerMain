@@ -54,7 +54,6 @@
                 <artifactId>maven-resources-plugin</artifactId>
                 <version>3.2.0</version>
             </plugin>
-
             <plugin>
                 <groupId>com.akathist.maven.plugins.launch4j</groupId>
                 <artifactId>launch4j-maven-plugin</artifactId>
