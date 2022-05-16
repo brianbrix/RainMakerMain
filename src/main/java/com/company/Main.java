@@ -8,8 +8,7 @@ public class Main {
         ClipboardTextListener b = new ClipboardTextListener();
         Thread thread = new Thread(b);
         thread.start();
-//        JOptionPane.showMessageDialog(null, "RainMaker Started Successfully...");
-//        push();
+
 
 
     }
