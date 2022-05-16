@@ -5,19 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cfbedce8-5c5e-4d7d-91a0-6078d71ad58d" name="Changes" comment="Yaml changes">
-      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rainmakerr.iml" beforeDir="false" afterPath="$PROJECT_DIR$/rainmakerr.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/Artifact.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/DownloadJar.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/Result.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/company/ClipboardTextListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/company/ClipboardTextListener.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/company/DownloadJar.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/company/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,7 +114,7 @@
       <workItem from="1652563862361" duration="8551000" />
       <workItem from="1652611912437" duration="123000" />
       <workItem from="1652633461042" duration="9739000" />
-      <workItem from="1652679745252" duration="1230000" />
+      <workItem from="1652679745252" duration="1445000" />
     </task>
     <task id="LOCAL-00001" summary="New change">
       <created>1651511344620</created>
