@@ -24,37 +24,31 @@ public class Main {
         Thread thread = new Thread(b);
 //        thread.start();
 //        JOptionPane.showMessageDialog(null, "RainMaker Started Successfully...");
-        push();
+//        push();
 
 
     }
-    static void push() throws GitAPIException, IOException, URISyntaxException {
-//        Git git = Git.open(Paths.get(".").toAbsolutePath().normalize().toFile());
-        Repository existingRepo = new FileRepositoryBuilder()
-                .setGitDir(new File("/home/brianbrix/IdeaProjects/RainMaker/rainmakerr/.git"))
-                .build();
-        Git git = new Git(existingRepo);
-
-        // add remote repo:
-//        RemoteAddCommand remoteAddCommand = git.remoteAdd();
-        git.add().addFilepattern("/home/brianbrix/IdeaProjects/RainMaker/rainmakerr").call();
-        CommitCommand commitCommand = git.commit().setAll(true).setMessage("Commit");
-        RevCommit revCommit = commitCommand.call();
-        System.out.println(revCommit.getFullMessage());
-//        remoteAddCommand.setName("origin/main");
-//        remoteAddCommand.setUri(new URIish("https://github.com/brianbrix/RainMakerMain.git"));
-        // you can add more settings here if needed
-//        remoteAddCommand.call();
-
-        // push to remote:
-        PushCommand pushCommand = git.push();
-        pushCommand.setCredentialsProvider(new UsernamePasswordCredentialsProvider("brianbrix", "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"));
-        // you can add more settings here if needed
-         Iterable<PushResult> pushResults = pushCommand.call();
-         pushResults.forEach(pushResult -> {
-                     System.out.println(pushResult.getRemoteUpdates());
-                     System.out.println(pushResult.getMessages());
-                 }
-         );
-    }
+//    static void push() throws GitAPIException, IOException {
+//        Repository existingRepo = new FileRepositoryBuilder()
+//                .setGitDir(new File("/home/brianbrix/IdeaProjects/RainMaker/rainmakerr/.git"))
+//                .build();
+//        Git git = new Git(existingRepo);
+//
+//        // add remote repo:
+//        git.add().addFilepattern("/home/brianbrix/IdeaProjects/RainMaker/rainmakerr").call();
+//        CommitCommand commitCommand = git.commit().setAll(true).setMessage("Commit");
+//        RevCommit revCommit = commitCommand.call();
+//        System.out.println(revCommit.getFullMessage());
+//
+//        // push to remote:
+//        PushCommand pushCommand = git.push();
+//        pushCommand.setCredentialsProvider(new UsernamePasswordCredentialsProvider("brianbrix", "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"));
+//        // you can add more settings here if needed
+//         Iterable<PushResult> pushResults = pushCommand.call();
+//         pushResults.forEach(pushResult -> {
+//                     System.out.println(pushResult.getRemoteUpdates());
+//                     System.out.println(pushResult.getMessages());
+//                 }
+//         );
+//    }
 }
