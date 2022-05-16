@@ -48,7 +48,7 @@ public class Main {
 
         // push to remote:
         PushCommand pushCommand = git.push();
-        pushCommand.setCredentialsProvider(new UsernamePasswordCredentialsProvider("brianbrix", "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"));
+        pushCommand.setCredentialsProvider(new UsernamePasswordCredentialsProvider("brianbrix", "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"));
         // you can add more settings here if needed
          Iterable<PushResult> pushResults = pushCommand.call();
          pushResults.forEach(pushResult -> {
