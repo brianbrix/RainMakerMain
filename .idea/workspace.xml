@@ -4,17 +4,43 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cfbedce8-5c5e-4d7d-91a0-6078d71ad58d" name="Changes" comment="New change">
+    <list default="true" id="cfbedce8-5c5e-4d7d-91a0-6078d71ad58d" name="Changes" comment="Yaml changes">
+      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rainmakerr.iml" beforeDir="false" afterPath="$PROJECT_DIR$/rainmakerr.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/Artifact.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/DownloadJar.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/Result.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/company/ClipboardTextListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/company/ClipboardTextListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/company/DownloadJar.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/company/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -42,7 +68,12 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.company.Main" />
       <module name="rainmakerr" />
@@ -56,9 +87,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Dockerfile: Compose Deployment" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="sourceFilePath" value="Dockerfile" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
+        <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
       </list>
     </recent_temporary>
   </component>
@@ -73,7 +121,12 @@
       <workItem from="1649860250457" duration="218000" />
       <workItem from="1651509373222" duration="33000" />
       <workItem from="1651509417620" duration="7382000" />
-      <workItem from="1651520724733" duration="1373000" />
+      <workItem from="1651520724733" duration="10762000" />
+      <workItem from="1651537454616" duration="8000" />
+      <workItem from="1652563862361" duration="8551000" />
+      <workItem from="1652611912437" duration="123000" />
+      <workItem from="1652633461042" duration="9739000" />
+      <workItem from="1652679745252" duration="1230000" />
     </task>
     <task id="LOCAL-00001" summary="New change">
       <created>1651511344620</created>
@@ -166,7 +219,105 @@
       <option name="project" value="LOCAL" />
       <updated>1651522050578</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="New change">
+      <created>1651522109669</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1651522109669</updated>
+    </task>
+    <task id="LOCAL-00015" summary="New change">
+      <created>1651522245395</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1651522245395</updated>
+    </task>
+    <task id="LOCAL-00016" summary="New change">
+      <created>1651522502311</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1651522502311</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Yaml changes">
+      <created>1651522519996</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1651522519996</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Yaml changes">
+      <created>1651522785598</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1651522785598</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Yaml changes">
+      <created>1651523465028</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1651523465028</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Yaml changes">
+      <created>1651524141458</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1651524141458</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Yaml changes">
+      <created>1651527015073</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1651527015073</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Yaml changes">
+      <created>1651527133538</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1651527133538</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Yaml changes">
+      <created>1651527293155</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1651527293155</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Yaml changes">
+      <created>1651527742147</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1651527742147</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Yaml changes">
+      <created>1651528594212</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1651528594212</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Yaml changes">
+      <created>1651529347391</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1651529347391</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Yaml changes">
+      <created>1651532193092</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1651532193092</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -185,6 +336,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="New change" />
-    <option name="LAST_COMMIT_MESSAGE" value="New change" />
+    <MESSAGE value="Yaml changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Yaml changes" />
   </component>
 </project>
