@@ -37,6 +37,7 @@ public class Main {
 
         // add remote repo:
 //        RemoteAddCommand remoteAddCommand = git.remoteAdd();
+        git.add().addFilepattern("/home/brianbrix/IdeaProjects/RainMaker/rainmakerr").call();
         CommitCommand commitCommand = git.commit().setAll(true).setMessage("Commit");
         RevCommit revCommit = commitCommand.call();
         System.out.println(revCommit.getFullMessage());
