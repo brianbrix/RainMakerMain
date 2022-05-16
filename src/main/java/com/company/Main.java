@@ -1,10 +1,12 @@
 package com.company;
 
+import org.eclipse.jgit.api.CommitCommand;
 import org.eclipse.jgit.api.Git;
 import org.eclipse.jgit.api.PushCommand;
 import org.eclipse.jgit.api.RemoteAddCommand;
 import org.eclipse.jgit.api.errors.GitAPIException;
 import org.eclipse.jgit.lib.Repository;
+import org.eclipse.jgit.revwalk.RevCommit;
 import org.eclipse.jgit.storage.file.FileRepositoryBuilder;
 import org.eclipse.jgit.transport.PushResult;
 import org.eclipse.jgit.transport.URIish;
@@ -35,7 +37,9 @@ public class Main {
 
         // add remote repo:
 //        RemoteAddCommand remoteAddCommand = git.remoteAdd();
-        git.commit().setAll(true).setMessage("Commit").call();
+        CommitCommand commitCommand = git.commit().setAll(true).setMessage("Commit");
+        RevCommit revCommit = commitCommand.call();
+        System.out.println(revCommit.getFullMessage());
 //        remoteAddCommand.setName("origin/main");
 //        remoteAddCommand.setUri(new URIish("https://github.com/brianbrix/RainMakerMain.git"));
         // you can add more settings here if needed
