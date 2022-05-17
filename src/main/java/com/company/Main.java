@@ -9,8 +9,6 @@ public class Main {
         Thread thread = new Thread(b);
         thread.start();
 
-
-
     }
 
 }
