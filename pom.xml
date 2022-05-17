@@ -55,20 +55,24 @@
             </plugin>
 
             <plugin>
-                <!-- Build an executable JAR -->
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-jar-plugin</artifactId>
-                <version>3.1.0</version>
+                <artifactId>maven-assembly-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>single</goal>
+                        </goals>
+                    </execution>
+                </executions>
                 <configuration>
-                    
                     <archive>
                         <manifest>
-                            <addClasspath>true</addClasspath>
-                            <classpathPrefix>lib/</classpathPrefix>
                             <mainClass>com.company.Main</mainClass>
                         </manifest>
                     </archive>
-
+                    <descriptorRefs>
+                        <descriptorRef>jar-with-dependencies</descriptorRef>
+                    </descriptorRefs>
                 </configuration>
             </plugin>
             <plugin>
@@ -90,7 +94,7 @@
                         <configuration>
                             <headerType>gui</headerType>
                             <stayAlive>true</stayAlive>
-                            <jar>${project.build.directory}/${project.build.finalName}.jar</jar>
+                            <jar>${project.build.directory}/${project.build.finalName}-jar-with-dependencies.jar</jar>
                             <outfile>${project.build.directory}/${project.build.finalName}.exe</outfile>
 <!--                            <manifest>${project.basedir}/src/main/resources/${project.artifactId}.manifest</manifest>-->
 
