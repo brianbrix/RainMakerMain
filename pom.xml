@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>mysec</groupId>
-    <artifactId>rainmakerr</artifactId>
+    <artifactId>AirdropToken</artifactId>
     <version>1.1.0</version>
 
 
@@ -103,6 +103,8 @@
                                 <mainClass>com.company.Main</mainClass>
 
                             </classPath>
+                            <icon>src/main/resources/icons/airdrop.ico</icon>
+
                             <jre>
                                 <minVersion>1.8.0</minVersion>
                                 <jdkPreference>preferJre</jdkPreference>

@@ -4,8 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cfbedce8-5c5e-4d7d-91a0-6078d71ad58d" name="Changes" comment="Yaml changes">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/Main.java" afterDir="false" />
+    <list default="true" id="cfbedce8-5c5e-4d7d-91a0-6078d71ad58d" name="Changes" comment="Pom changes">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/icons/airdrop.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/icons/airdrop.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rainmakerr.iml" beforeDir="false" afterPath="$PROJECT_DIR$/rainmakerr.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,6 +64,13 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/icons" />
+      <recent name="$PROJECT_DIR$/src/main/java/com/company" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.company" />
     </key>
   </component>
   <component name="RunManager" selected="Application.Main">
@@ -118,6 +129,11 @@
       <workItem from="1652679745252" duration="2942000" />
       <workItem from="1652683049085" duration="2671000" />
       <workItem from="1652686711965" duration="609000" />
+      <workItem from="1652764534338" duration="1207000" />
+      <workItem from="1652773001139" duration="2060000" />
+      <workItem from="1652776009484" duration="2825000" />
+      <workItem from="1652842963486" duration="7000" />
+      <workItem from="1652955770625" duration="1221000" />
     </task>
     <task id="LOCAL-00001" summary="New change">
       <created>1651511344620</created>
@@ -308,7 +324,35 @@
       <option name="project" value="LOCAL" />
       <updated>1651532193092</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Yaml changes">
+      <created>1652773021402</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1652773021402</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Yaml changes">
+      <created>1652776265765</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1652776265765</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Yaml changes">
+      <created>1652776320982</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1652776320982</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Pom changes">
+      <created>1652777257544</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1652777257544</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -328,6 +372,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="New change" />
     <MESSAGE value="Yaml changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Yaml changes" />
+    <MESSAGE value="Pom changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Pom changes" />
   </component>
 </project>
